@@ -1,0 +1,25 @@
+﻿@model site.Service.ArticleViewModel
+
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <div class="row article-header">
+        <div class="text-center col-md-1">
+            @if (!string.IsNullOrEmpty(Model.SmallIconLink))
+            {
+                <img src="@Url.Content(Model.SmallIconLink)" />}
+        </div>
+        <div class="col-md-11">
+            <h2>@Model.Title </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.Raw(HttpUtility.HtmlDecode(Model.ShortDescription))
+            @Html.Raw(HttpUtility.HtmlDecode(Model.LongDescription))
+            <p><a href="@Model.DemoLink" target="_blank">DEMO</a></p>
+        </div>
+    </div>
+</div>
