@@ -35,13 +35,15 @@
     <section class="row articles">
             @foreach (var article in Model)
             {
-                <div class="col-md-4">
+                <div class="article col-md-4">
                     @if (!string.IsNullOrEmpty(article.BigIconLink))
                     {
-                        <div class="article"><img src="@Url.Content(article.BigIconLink)" /></div>
+                        <div class="image"><img src="@Url.Content(article.BigIconLink)" /></div>
                     }
-                    <a href="@Url.Action("Description", "Home", new { title = article.Title }, null)"><h3>@article.Title</h3></a>
-                    <p>@article.ShortDescription</p>
+                    <div class="title"><a href="@Url.Action("Description", "Home", new { title = article.Title }, null)"><h3>@article.Title</h3></a></div>
+                    <div class="description">
+                        <p>@article.ShortDescription</p>
+                    </div>
                 </div>
             }
     </section>

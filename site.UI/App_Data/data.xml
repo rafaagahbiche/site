@@ -4,7 +4,7 @@
     <article id="0">
       <title>Article Manager</title>
       <shortdescription>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus neque, vestibulum id nisl sagittis, tempor pretium quam. Suspendisse id scelerisque enim, nec mattis libero. Phasellus pretium enim ut lectus laoreet efficitur. Integer tristique turpis a tempor bibendum. Vivamus ut mollis est. Proin varius feugiat maximus. Duis et auctor justo, vitae blandit velit. Nam a vestibulum nibh.</p>
+        A content manager that allows you to create, edit and delete articles that feature a title, a description and multiple pages.
       </shortdescription>
       <longdescription>
         &amp;lt;h3 id="d68f" class="graf graf--h3 graf-after--p"&amp;gt;&amp;lt;span class="markup--strong markup--h3-strong"&amp;gt;&amp;lt;em&amp;gt;&amp;lt;strong&amp;gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus neque, vestibulum id nisl sagittis, tempor pretium quam. Suspendisse id scelerisque enim, nec mattis libero&amp;lt;/strong&amp;gt;&amp;lt;/em&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt;

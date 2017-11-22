@@ -11,15 +11,19 @@
             {
                 <img src="@Url.Content(Model.SmallIconLink)" />}
         </div>
-        <div class="col-md-11">
-            <h2>@Model.Title </h2>
+        <div class="col-md-11 title">
+            <h1>@Model.Title </h1>
         </div>
     </div>
-    <div class="row">
+    <article class="row">
         <div class="col-md-12">
-            @Html.Raw(HttpUtility.HtmlDecode(Model.ShortDescription))
-            @Html.Raw(HttpUtility.HtmlDecode(Model.LongDescription))
+            <div class="description">
+                @Html.Raw(HttpUtility.HtmlDecode(Model.ShortDescription))
+            </div>
+            <div class="content">
+                @Html.Raw(HttpUtility.HtmlDecode(Model.LongDescription))
+            </div>
             <p><a href="@Model.DemoLink" target="_blank">DEMO</a></p>
         </div>
-    </div>
+    </article>
 </div>
