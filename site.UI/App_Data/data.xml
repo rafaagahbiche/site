@@ -7,7 +7,7 @@
         A content manager that allows you to create, edit and delete articles that feature a title, a description and multiple pages.
       </shortdescription>
       <longdescription>
-&amp;lt;div class="row" style="margin: 40px auto 40px auto;"&amp;gt;
+&amp;lt;div class="row" style="margin: 40px auto 40px auto; background-color: #e9e9e9"&amp;gt;
 &amp;lt;div class="col-md-6" style="font-size: 20px;"&amp;gt;
 &amp;lt;p&amp;gt;&amp;lt;span style="color: #c0c0c0;"&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;&amp;lt;span style="color: #c0c0c0;"&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;

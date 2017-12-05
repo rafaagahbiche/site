@@ -17,13 +17,14 @@
     </div>
     <article class="row">
         <div class="col-md-12">
-            <div class="description">
-                @Html.Raw(HttpUtility.HtmlDecode(Model.ShortDescription))
-            </div>
             <div class="content">
                 @Html.Raw(HttpUtility.HtmlDecode(Model.LongDescription))
             </div>
-            <p><a href="@Model.DemoLink" target="_blank">DEMO</a></p>
+            <div class="demo-link">
+                <a href="@Model.DemoLink" target="_blank">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true">DEMO</span>
+                </a>
+            </div>
         </div>
     </article>
 </div>

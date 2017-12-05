@@ -1,9 +1,10 @@
 ﻿@font-face {
-	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?x5xtwx#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?x5xtwx') format('truetype'),
-		url('../fonts/icomoon.woff?x5xtwx') format('woff'),
-		url('../fonts/icomoon.svg?x5xtwx#icomoon') format('svg');
+	font-family: 'icomoon', 'Glyphicons Halflings';
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/glyphicons-halflings-regular.woff') format('woff'), 
+        url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+        url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
 body {
@@ -92,4 +93,19 @@ article .description {
 
 article .content {
     font-size: 16px;
+}
+
+.demo-link {
+    display: inline-block;
+    background-color: #9ecdd9;
+    padding: 5px 10px;
+}
+
+.demo-link > a {
+    color: #fff;
+}
+
+.demo-link > a:hover {
+    color: #fff;
+    text-decoration: none;
 }
