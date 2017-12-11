@@ -8,11 +8,15 @@
     <section class="intro row">
         <div class="col-md-12">
             <p><h2>Hello everybody,</h2></p>
+            <br />
             <p>My name is Rafaa Gahbiche, I'm a web developer.</p>
-            <p><span class="glyphicon-home"></span>I am based in Barcelona.</p>
-            <p>I work for D-Link where I build internet websites with cutting edge technology.</p>
+            <br />
+            <p><span class="glyphicon glyphicon-home"></span>   I am based in Barcelona.</p>
+            <br />
+            <p><span class="glyphicon glyphicon-briefcase"></span>  I work for d-link where I build internet websites with cutting edge technology.</p>
+            <br />
             <p>
-                <span class="glyphicon-cloud"></span>My stack is mostly
+                <span class="glyphicon glyphicon-pencil"></span>    My stack is mostly
                 <span class="skill">C#</span>,
                 <span class="skill">ASP.NET</span>,
                 <span class="skill">MS SharePoint</span>,
@@ -20,12 +24,9 @@
                 <span class="skill">HTML5</span>,
                 <span class="skill">jQuery</span>.
             </p>
-            <p>
-                Have a look at my most recent personal projects and please
-                <a href="#">
-                    <span>let me know</span>
-                </a>
-                if you have exciting job opportunities.
+            <br />
+            <p><i class="glyphicon glyphicon-envelope"></i>
+                have a look at my most recent personal projects below.
             </p>
         </div>
     </section>
@@ -37,9 +38,9 @@
                     {
                         <div class="image"><img src="@Url.Content(article.BigIconLink)" /></div>
                     }
-                    <div class="title"><a href="@Url.Action("Description", "Home", new { title = article.Title }, null)"><h3>@article.Title</h3></a></div>
+                    <div class="title"><a href="@Url.Action("Description", "Home", new { title = article.Title }, null)">@article.Title</a></div>
                     <div class="description">
-                        <p>@article.ShortDescription</p>
+                        <span>@article.ShortDescription</span>
                     </div>
                 </div>
             }

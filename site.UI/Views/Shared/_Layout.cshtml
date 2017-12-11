@@ -4,24 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title | Rafaa Gahbiche</title>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
     <header class="navbar navbar-header navbar-fixed-top">
-        <div><a href="@Url.Content("/")" title="Home"></a>Home</div>
+        <div class="logo"><a href="@Url.Action("Index")" title="Home">Home</a></div>
     </header>
 
-    <div class="body-content">
+    <main>
         @RenderBody()
-        <hr />
-        <footer>
-            <div class="container">
-                <p>&copy; @DateTime.Now.Year - Rafaa Gahbiche</p>
-            </div>
-        </footer>
-    </div>
+    </main>
+    <footer>
+        <div class="container">
+            &copy; @DateTime.Now.Year - Rafaa Gahbiche
+        </div>
+    </footer>
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>

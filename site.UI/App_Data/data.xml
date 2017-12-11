@@ -7,38 +7,38 @@
         A content manager that allows you to create, edit and delete articles that feature a title, a description and multiple pages.
       </shortdescription>
       <longdescription>
-&amp;lt;div class="row" style="margin: 40px auto 40px auto; background-color: #e9e9e9"&amp;gt;
+&amp;lt;div class="row" style="padding: 0 90px; margin: 15px auto 40px auto; background-color: #e9e9e9;"&amp;gt;
 &amp;lt;div class="col-md-6" style="font-size: 20px;"&amp;gt;
 &amp;lt;p&amp;gt;&amp;lt;span style="color: #c0c0c0;"&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;&amp;lt;span style="color: #c0c0c0;"&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;span style="color: #c0c0c0;"&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;This is a Conte&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;strong style="color: #c0c0c0;"&amp;gt;&amp;lt;em&amp;gt;nt Manager application built on MVC5 and jQuery.&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;span style="color: #c0c0c0;"&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;em&amp;gt;The content manager is presented with traditional functionalities including creating, editing and deleting articles. Each article has a title, a description and multiple pages that will represent its content.&amp;lt;/em&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;span style="color: #000000;"&amp;gt;&amp;lt;em&amp;gt;This is a Conte&amp;lt;/em&amp;gt;&amp;lt;em&amp;gt;nt Manager application built on MVC5 and jQuery.&amp;lt;/em&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;&amp;lt;span style="color: #000000;"&amp;gt;&amp;lt;em&amp;gt;The content manager is presented with traditional functionalities including creating, editing and deleting articles. Each article has a title, a description and multiple pages that will represent its content.&amp;lt;/em&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 &amp;lt;div class="col-md-6" style="text-align: center;"&amp;gt;&amp;lt;img style="width: 100%;" src="/images/article-manager.png" alt="" /&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
-&amp;lt;div style="margin: 40px auto 40px auto;"&amp;gt;
-&amp;lt;p&amp;gt;This application allows the end user to create multiple articles (defined by their title and desription) and also relate pages to the article which wil concist its content.&amp;lt;/p&amp;gt;
+&amp;lt;div style="padding: 0 90px; margin: 40px auto 40px auto;"&amp;gt;
+&amp;lt;p&amp;gt;This application allows the end user to create multiple articles (defined by their title and desription) and also create pages related to the article.&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;the main page vertical menu contains all articles created.&amp;amp;nbsp;&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
-&amp;lt;div class="row" style="margin: 40px auto 40px auto;"&amp;gt;
-&amp;lt;div class="col-md-4"&amp;gt;&amp;lt;img style="width: 70%;" src="/images/article-menu.png" alt="" /&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;div class="row" style="padding: 0 90px; margin: 40px auto 40px auto;"&amp;gt;
+&amp;lt;div class="col-md-4" style="text-align: center;"&amp;gt;&amp;lt;img style="width: 70%;" src="/images/article-menu.png" alt="" /&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;div class="col-md-8"&amp;gt;
 &amp;lt;p&amp;gt;The menu on the left is used to navigate between the existing articles. To add a new article, the end-user can click on the last + item and an empty article will be shown.&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;To modifiy an article, simply click on the title of the article on the menu, the title and description can be modified and then save the modification by clicking on the green save button above.&amp;amp;nbsp;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;&amp;lt;img style="width: 100%;" src="/images/article-buttons.png" alt="" /&amp;gt;&amp;lt;/p&amp;gt;
+&amp;lt;p style="text-align: center;"&amp;gt;&amp;lt;img style="width: 80%;" src="/images/article-buttons.png" alt="" /&amp;gt;&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;To preview the article, click on the pink Preview button. This will take you to Article Reader application.&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;note that the friendly url&amp;amp;nbsp;&amp;lt;/p&amp;gt;
-&amp;lt;p&amp;gt;The black Delete button will prompt a confirm dialog to confirm or cancel deletion of the article&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;note that the friendly url includes the article id&amp;amp;nbsp;&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;The black Delete button will prompt a confirmation dialog to accept or cancel deletion of the article&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
-&amp;lt;div class="row" style="margin: 40px auto 40px auto;"&amp;gt;
+&amp;lt;div class="row" style="padding: 0 90px; margin: 40px auto 40px auto;"&amp;gt;
 &amp;lt;div class="col-md-6"&amp;gt;
-&amp;lt;p&amp;gt;Under the description, all the pages related to the article are presented in an editor. By clicking on the tabs, you can view each page, edit it and save it. A page can also be deleted by clicking on the black button and confirm.&amp;lt;/p&amp;gt;
+&amp;lt;p&amp;gt;Under the description, all the pages related to the article are presented in an editor. I used &amp;lt;a title="TinyMCE" href="https://www.tinymce.com/" target="_blank"&amp;gt;TinyMCE&amp;lt;/a&amp;gt;&amp;amp;nbsp;as a text editor. By clicking on the tabs, you can view each page, edit it and save it. A page can also be deleted by clicking on the black button and confirm.&amp;lt;/p&amp;gt;
 &amp;lt;p&amp;gt;The + tab allows you to create new page inside the current article&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 &amp;lt;div class="col-md-6"&amp;gt;&amp;lt;img style="width: 100%;" src="/images/text-editor.png" alt="" /&amp;gt;&amp;lt;/div&amp;gt;
 &amp;lt;/div&amp;gt;
-&amp;lt;div&amp;gt;
+&amp;lt;div style="padding: 0 90px;"&amp;gt;
 &amp;lt;p&amp;gt;Eeach button action support AJAX update, either with&amp;amp;nbsp;&amp;amp;nbsp;@Ajax.ActionLink or with jQuery&amp;amp;nbsp;$.ajax functionality,&amp;amp;nbsp;eleminating the need to reload the entire page.&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;</longdescription>
       <demo>http://demoarticlemanager.azurewebsites.net/</demo>
@@ -46,9 +46,9 @@
       <smallicon>/images/edit64.png</smallicon>
     </article>
     <article id="1">
-      <title>Article Viewer</title>
+      <title>Article Reader</title>
       <shortdescription>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus neque, vestibulum id nisl sagittis, tempor pretium quam. Suspendisse id scelerisque enim, nec mattis libero. Phasellus pretium enim ut lectus laoreet efficitur. Integer tristique turpis a tempor bibendum. Vivamus ut mollis est. Proin varius feugiat maximus. Duis et auctor justo, vitae blandit velit. Nam a vestibulum nibh.</p>
+        After creating different articles with pages, this application displays the article title, description and related pages with a slider
       </shortdescription>
       <longdescription>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus neque, vestibulum id nisl sagittis, tempor pretium quam. Suspendisse id scelerisque enim, nec mattis libero. Phasellus pretium enim ut lectus laoreet efficitur. Integer tristique turpis a tempor bibendum. Vivamus ut mollis est. Proin varius feugiat maximus. Duis et auctor justo, vitae blandit velit. Nam a vestibulum nibh.</p>
@@ -60,7 +60,7 @@
     <article id="2">
       <title>City Info</title>
       <shortdescription>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus neque, vestibulum id nisl sagittis, tempor pretium quam. Suspendisse id scelerisque enim, nec mattis libero. Phasellus pretium enim ut lectus laoreet efficitur. Integer tristique turpis a tempor bibendum. Vivamus ut mollis est. Proin varius feugiat maximus. Duis et auctor justo, vitae blandit velit. Nam a vestibulum nibh.</p>
+        My first Angular application. Search for a city and display an image from Google Image, weather forecast and upcoming events in the city.
       </shortdescription>
       <longdescription>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus risus neque, vestibulum id nisl sagittis, tempor pretium quam. Suspendisse id scelerisque enim, nec mattis libero. Phasellus pretium enim ut lectus laoreet efficitur. Integer tristique turpis a tempor bibendum. Vivamus ut mollis est. Proin varius feugiat maximus. Duis et auctor justo, vitae blandit velit. Nam a vestibulum nibh.</p>

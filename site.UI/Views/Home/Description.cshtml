@@ -4,27 +4,27 @@
     ViewBag.Title = Model.Title;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="container">
-    <div class="row article-header">
-        <div class="text-center col-md-1">
+
+<header class="container">
+    <div class="row">
+        <div class="col-md-1 col-xs-2 text-center">
             @if (!string.IsNullOrEmpty(Model.SmallIconLink))
             {
                 <img src="@Url.Content(Model.SmallIconLink)" />}
         </div>
-        <div class="col-md-11 title">
-            <h1>@Model.Title </h1>
+        <div class="col-md-10 col-xs-10 title">
+            <h1 class=""><span>@Model.Title</span></h1>
         </div>
     </div>
-    <article class="row">
-        <div class="col-md-12">
-            <div class="content">
-                @Html.Raw(HttpUtility.HtmlDecode(Model.LongDescription))
-            </div>
-            <div class="demo-link">
-                <a href="@Model.DemoLink" target="_blank">
-                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true">DEMO</span>
-                </a>
-            </div>
-        </div>
-    </article>
-</div>
+</header>
+<article class="fluid-container">
+    @Html.Raw(HttpUtility.HtmlDecode(Model.LongDescription))
+    <div class="demo-link">
+        <a href="@Model.DemoLink" class="btn btn-default"><span class="glyphicon glyphicon-menu-right">DEMO</span></a>
+    </div>
+    @*<div class="demo-link">
+        <a href="@Model.DemoLink">
+            <button type="button" class="btn btn-primary"></button>
+        </a>
+    </div>*@
+</article>
