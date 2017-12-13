@@ -14,17 +14,17 @@ namespace site.UI.Controllers
 			this.service = service;
 		}
 
-
-		// GET: Home
 		public ActionResult Index()
         {
-            return View(service.GetAll());
+            return View(service.GetArticlesGlobe());
         }
 
-		[Route("article/{title}")]
-		public ActionResult Description(string title)
+		[Route("article/{id}/{title}")]
+		public ActionResult Description(int id)
 		{
-			return View(service.Get(title));
+			var globe = service.GetArticlesGlobe();
+			globe.SelectedArticleId = id;
+			return View(service.Get(id));
 		}
     }
 }

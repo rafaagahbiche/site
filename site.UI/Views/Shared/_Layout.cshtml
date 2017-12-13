@@ -1,31 +1,21 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title | Rafaa Gahbiche</title>
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet" type="text/css">
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
-</head>
-<body>
-    <header class="navbar navbar-header navbar-fixed-top">
-        <div class="logo"><a href="@Url.Action("Index")" title="Home">Home</a></div>
-    </header>
-
-    <main>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title | Rafaa Gahbiche</title>
+        <link href="http://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css" />
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/menu.css" rel="stylesheet" type="text/css" />
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+    </head>
+    <body>
         @RenderBody()
-    </main>
-    <footer>
-        <div class="container">
-            &copy; @DateTime.Now.Year - Rafaa Gahbiche
-        </div>
-    </footer>
-
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-</body>
+        @RenderSection("Scripts", required: false)
+    </body>
 </html>

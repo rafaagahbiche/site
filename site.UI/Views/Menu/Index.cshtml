@@ -1,0 +1,35 @@
+﻿@using site.Service
+@model ArticlesGlobe
+
+@{
+    <nav class="menu-list">
+        <ul class="menu">
+            <li class="home-link">
+                <a href="/">rafaagahbiche</a>
+            </li>
+                @foreach (var article in Model.Articles)
+                        {
+                            var cssClass = Model.SelectedArticleId == article.Id ? "article-link selected" : "article-link";
+                            <li class="@cssClass">
+                        <div class="link">
+                            <div class="link-icon">
+                                <input type="hidden" value="@article.SmallIconLink" />
+                            </div>
+                            <div class="link-text">
+                                <a href="@Url.Action("Description", "Home",
+                                        new { id = article.Id, title = article.Title.FriendlyTitle()}, null)">@article.Title</a>
+                                    </div>
+                                </div>
+                        <div class="technos">
+                            @for (int i = 0; i < article.Technos.Count(); i++)
+                            {
+                                <div><span>@article.Technos[i]</span></div>
+                            }
+                        </div>
+                        <div class="extra-links">
+                            <a href="@article.DemoLink" target="_blank" class="extra-link">#Demo</a>&nbsp;|&nbsp;<a href="@article.GitLink" target="_blank" class="extra-link">#Github code</a>
+                        </div>
+                </li>}
+        </ul>
+    </nav>
+}

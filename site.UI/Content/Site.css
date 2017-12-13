@@ -43,16 +43,34 @@ body > header > .logo {
 }
 
 main {
-    margin-top: 60px;
+    display: block;
 }
 
 footer {
-    background: #a2a2a2;
+    width: 100%;
     color: #fff;
     text-transform: uppercase;
     font-size: 10px;
+    background: #000;
     margin-top: 15px;
     padding: 10px 0;
+    text-align: center;
+}
+
+.menu footer  {
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+}
+
+footer > div {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer a, footer a:hover {
+    font-size: 10px;
+    color: #fff;
 }
 
 section a:hover {
@@ -62,7 +80,7 @@ section a:hover {
 section.intro {
     font-family: Consolas, Menlo, Monaco, 'Lucida Console';
     font-size: 18px;
-    margin-bottom: 65px;
+    margin-bottom: 30px;
 }
 
 section.intro h2 {
@@ -75,6 +93,10 @@ span.skill {
     padding-left: 0.3em;
 }
 
+.articles {
+    margin-bottom: 25px;
+}
+
 .articles .image {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -83,6 +105,15 @@ span.skill {
 
 .articles p {
     line-height: 2;
+}
+
+.content {
+    position: absolute;
+    left: 315px;
+}
+
+.content > header {
+    margin-top: 15px;
 }
 
 .article .title {
@@ -127,17 +158,13 @@ article .content {
     font-size: 16px;
 }
 
-.demo-link {
-    display: inline-block;
-    padding: 0 90px;
-}
-
-.demo-link > a:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
 .title > h1 {
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
+}
+
+@media screen and (max-device-width: 480px) {
+    .content {
+        left: 315px;
+    }
 }

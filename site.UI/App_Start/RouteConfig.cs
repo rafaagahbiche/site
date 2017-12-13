@@ -16,11 +16,15 @@ namespace site.UI
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
 			routes.MapRoute(
-				"article",
-				"article/{title}",
-				new { controller = "Home", action = "Description" }
-			);
+				name: "article",
+				url: "article/{id}/{title}",
+				defaults: new {
+					controller = "Home",
+					action = "Description",
+					id = UrlParameter.Optional
+				});
 		}
 	}
 }

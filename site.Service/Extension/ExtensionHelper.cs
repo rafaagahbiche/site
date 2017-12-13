@@ -15,7 +15,9 @@ namespace site.Service
 				Title = articleViewModel.Title,
 				BigIconLink = articleViewModel.BigIconLink,
 				SmallIconLink = articleViewModel.SmallIconLink,
-				DemoLink = articleViewModel.DemoLink
+				DemoLink = articleViewModel.DemoLink,
+				GitLink = articleViewModel.GitLink,
+				Technos = articleViewModel.Technos
 			};
 
 			return articleData;
@@ -33,9 +35,21 @@ namespace site.Service
 				articleViewModel.DemoLink = article.DemoLink;
 				articleViewModel.BigIconLink = article.BigIconLink;
 				articleViewModel.SmallIconLink = article.SmallIconLink;
+				articleViewModel.GitLink = article.GitLink;
+				articleViewModel.Technos = article.Technos;
 			}
 
 			return articleViewModel;
+		}
+
+		public static string FriendlyTitle(this string title)
+		{
+			if (!string.IsNullOrEmpty(title))
+			{
+				title = title.Trim().Replace(" ", "-").Replace("'", "-");
+			}
+
+			return title;
 		}
 	}
 }

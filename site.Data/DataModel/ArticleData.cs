@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace site.Data
 {
 	public class ArticleData: ItemData
@@ -10,5 +12,6 @@ namespace site.Data
 		public string GitLink { get; set; }
 		public string BigIconLink { get; set; }
 		public string SmallIconLink { get; set; }
+		public string[] Technos { get; set; }
 	}
 }

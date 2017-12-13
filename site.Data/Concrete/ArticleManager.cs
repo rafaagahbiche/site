@@ -31,7 +31,11 @@
 						BigIconLink = article.Element("bigicon") != null
 							? article.Element("bigicon").Value : string.Empty,
 						SmallIconLink = article.Element("smallicon") != null
-							? article.Element("smallicon").Value : string.Empty
+							? article.Element("smallicon").Value : string.Empty,
+						GitLink = article.Element("github") != null
+							? article.Element("github").Value : string.Empty,
+						Technos = article.Element("technos") != null
+							? article.Element("technos").Value.Split(';') : null
 					}).AsQueryable();
 		}
 	}

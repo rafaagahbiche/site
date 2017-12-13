@@ -9,5 +9,6 @@
 		public string GitLink { get; set; }
 		public string BigIconLink { get; set; }
 		public string SmallIconLink { get; set; }
+		public string[] Technos { get; set; }
 	}
 }

@@ -2,29 +2,40 @@
 
 @{
     ViewBag.Title = Model.Title;
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_OtherLayout.cshtml";
 }
 
-<header class="container">
-    <div class="row">
-        <div class="col-md-1 col-xs-2 text-center">
-            @if (!string.IsNullOrEmpty(Model.SmallIconLink))
-            {
-                <img src="@Url.Content(Model.SmallIconLink)" />}
+<aside class="menu">
+    @{ Html.RenderAction("Index", "Menu", new { selectedId = Model.Id}); }
+    <footer>
+        <div>&copy; @DateTime.Now.Year - Rafaa Gahbiche</div>
+        <div><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:ar.gahbiche@gmail.com" target="_blank">ar.gahbiche@gmail.com</a></div>
+    </footer>
+</aside>
+<div class="content">
+    <header class="container">
+        <div class="row">
+            <div class="col-md-1 col-xs-2 text-center">
+                @if (!string.IsNullOrEmpty(Model.SmallIconLink))
+                {
+                    <img src="@Url.Content(Model.SmallIconLink)" />}
+            </div>
+            <div class="col-md-10 col-xs-10 title">
+                <h1 class=""><span>@Model.Title</span></h1>
+            </div>
         </div>
-        <div class="col-md-10 col-xs-10 title">
-            <h1 class=""><span>@Model.Title</span></h1>
-        </div>
-    </div>
-</header>
-<article class="fluid-container">
-    @Html.Raw(HttpUtility.HtmlDecode(Model.LongDescription))
-    <div class="demo-link">
-        <a href="@Model.DemoLink" class="btn btn-default"><span class="glyphicon glyphicon-menu-right">DEMO</span></a>
-    </div>
-    @*<div class="demo-link">
-        <a href="@Model.DemoLink">
-            <button type="button" class="btn btn-primary"></button>
-        </a>
-    </div>*@
-</article>
+    </header>
+    <article class="fluid-container">
+        @Html.Raw(HttpUtility.HtmlDecode(Model.LongDescription))
+    </article>
+</div>
+@section Scripts {
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.link-icon').each(function () {
+            var link = $(this).find('input').val();
+            $(this).css({ 'background-image': "url(" + link + ")" });
+        });
+    });
+    </script>
+}

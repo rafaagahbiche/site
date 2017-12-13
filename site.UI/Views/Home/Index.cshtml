@@ -1,9 +1,12 @@
-﻿@{
+﻿@using site.Service
+
+@{
     ViewBag.Title = "Home";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
 
-@model IEnumerable<site.Service.ArticleViewModel>
+@model ArticlesGlobe
+
 <div class="container">
     <section class="intro row">
         <div class="col-md-12">
@@ -20,9 +23,9 @@
                 <span class="skill">C#</span>,
                 <span class="skill">ASP.NET</span>,
                 <span class="skill">MS SharePoint</span>,
-                <span class="skill">Angular</span>,
+                <span class="skill">jQuery</span>,
                 <span class="skill">HTML5</span>,
-                <span class="skill">jQuery</span>.
+                <span class="skill">Angular</span>.
             </p>
             <br />
             <p><i class="glyphicon glyphicon-envelope"></i>
@@ -31,14 +34,15 @@
         </div>
     </section>
     <section class="row articles">
-            @foreach (var article in Model)
+            @foreach (var article in Model.Articles)
             {
                 <div class="article col-md-4">
                     @if (!string.IsNullOrEmpty(article.BigIconLink))
                     {
                         <div class="image"><img src="@Url.Content(article.BigIconLink)" /></div>
                     }
-                    <div class="title"><a href="@Url.Action("Description", "Home", new { title = article.Title }, null)">@article.Title</a></div>
+                    <div class="title"><a href="@Url.Action("Description", "Home",
+                                               new { id = article.Id, title = article.Title.FriendlyTitle()}, null)">@article.Title</a></div>
                     <div class="description">
                         <span>@article.ShortDescription</span>
                     </div>

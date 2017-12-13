@@ -7,5 +7,6 @@ namespace site.Service
 		IEnumerable<ArticleViewModel> GetAll();
 		ArticleViewModel Get(int id);
 		ArticleViewModel Get(string title);
+		ArticlesGlobe GetArticlesGlobe();
 	}
 }

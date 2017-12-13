@@ -47,6 +47,15 @@
 			}
 		}
 
+		public ArticlesGlobe GetArticlesGlobe()
+		{
+			return new ArticlesGlobe()
+			{
+				Articles = GetAll(),
+				SelectedArticleId = -1
+			};
+		}
+
 		private ArticleViewModel GetArticle(ArticleData articleData)
 		{
             ArticleViewModel article = null;

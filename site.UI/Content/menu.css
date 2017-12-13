@@ -1,0 +1,122 @@
+﻿aside.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 315px;
+    height: 100%;
+    background: #000;
+    padding: 0;
+}
+
+ul.menu {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+li.home-link {
+    text-align: center;
+    padding: 20px;
+    margin: 25px 20px;
+    border-bottom: 1px solid #fff;
+}
+
+li.home-link a {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: inherit;
+    font-family: 'satisfy', sans-serif;
+}
+
+li.article-link {
+    border-bottom: 1px solid #fff;
+    margin: 15px 5px;
+    padding: 10px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+li.article-link .link {
+    margin: auto;
+    width: 90%;
+}
+
+li.article-link .link-icon {
+    width: 53px;
+    height: 53px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+li.article-link .link-text {
+    margin-left: 53px;
+}
+
+li.article-link.selected .link-text {
+    margin: auto;
+    width: auto;
+}
+
+li.selected {
+    background: #fff;
+    color: #000;
+    margin: 0;
+    padding: 15px;
+}
+
+li.selected a {
+    color: #000;
+}
+
+.extra-links, 
+.technos, 
+li.article-link.selected .link-icon {
+    display: none;
+}
+
+li.selected .extra-links, 
+li.selected .technos,
+.link-icon,
+.link-text  {
+    display:block;
+    overflow: hidden;
+}
+
+.article-link a {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.article-link a.extra-link {
+    font-family: Consolas, Menlo, Monaco, 'Lucida Console';
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+.technos > div {
+    display: inline-block;
+    font-size: 10px;
+    text-align: center;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 15px;
+    border: 0.5px solid;
+}
+
+/*Phone*/
+@media screen and (max-device-width: 480px) {
+    .menu {
+        display: none;
+    }
+}
