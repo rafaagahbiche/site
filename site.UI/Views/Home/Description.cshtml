@@ -7,20 +7,16 @@
 
 <aside class="menu">
     @{ Html.RenderAction("Index", "Menu", new { selectedId = Model.Id}); }
-    <footer>
-        <div>&copy; @DateTime.Now.Year - Rafaa Gahbiche</div>
-        <div><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:ar.gahbiche@gmail.com" target="_blank">ar.gahbiche@gmail.com</a></div>
-    </footer>
 </aside>
 <div class="content">
     <header class="container">
         <div class="row">
-            <div class="col-md-1 col-xs-2 text-center">
+            <div class="icon col-md-1 col-xs-2 text-center">
                 @if (!string.IsNullOrEmpty(Model.SmallIconLink))
                 {
                     <img src="@Url.Content(Model.SmallIconLink)" />}
             </div>
-            <div class="col-md-10 col-xs-10 title">
+            <div class="col-md-10 col-xs-12 title">
                 <h1 class=""><span>@Model.Title</span></h1>
             </div>
         </div>
@@ -37,5 +33,5 @@
             $(this).css({ 'background-image': "url(" + link + ")" });
         });
     });
-    </script>
+</script>
 }

@@ -2,7 +2,6 @@
 	font-family: 'icomoon', 'Glyphicons Halflings';
     src: url('../fonts/glyphicons-halflings-regular.eot');
     src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
-        url('../fonts/glyphicons-halflings-regular.woff') format('woff'), 
         url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
         url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
@@ -59,8 +58,10 @@ footer {
 
 .menu footer  {
     z-index: 1000;
+    display: block;
     position: absolute;
     bottom: 0;
+    width: 315px;
 }
 
 footer > div {
@@ -161,10 +162,33 @@ article .content {
 .title > h1 {
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-device-width: 480px) {
+    h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+    
+    main header.container {
+        padding: 0 50px;
+    }
+
     .content {
-        left: 315px;
+        left: 0;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    article > div {
+        padding: 0 40px !important;
+    }
+
+    .content > header .icon {
+        display: none;
     }
 }

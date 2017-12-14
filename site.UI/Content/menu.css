@@ -1,4 +1,12 @@
 ﻿aside.menu {
+    position: relative;
+}
+
+aside.menu > header {
+    display: none;
+}
+
+.menu-list {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,6 +14,7 @@
     height: 100%;
     background: #000;
     padding: 0;
+    z-index: 1;
 }
 
 ul.menu {
@@ -116,7 +125,72 @@ li.selected .technos,
 
 /*Phone*/
 @media screen and (max-device-width: 480px) {
-    .menu {
-        display: none;
+    .menu-list {
+        left: -315px;
+    }
+    
+    aside.menu > header {
+        display: block;
+        position: fixed;
+        top: 15px;
+        z-index: 2;
+        background: #000;
+        padding: 2px;
+        width: 45px;
+        height: 38px;
+    }
+
+    .menu-header {
+      cursor: pointer;
+      margin: 0 auto;
+      width: 35px;
+      height: 40px;
+    }
+
+    .menu-global {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        position: absolute;
+        left: 4px;
+        width: 80%;
+        -webkit-transition: 0.55s;
+        transition: 0.55s;
+        border-top: 1px solid #fff;
+    }
+
+    .menu-top {
+      top: 6px;
+    }
+    .menu-middle {
+      top: 18px;
+    }
+    .menu-bottom {
+      top: 30px;
+    }
+
+    .menu-top-click {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        top: 15px;
+        -webkit-transform: rotate(50deg);
+        -ms-transform: rotate(50deg);
+        transform: rotate(50deg);
+        -webkit-transition: 0.55s 0.5s;
+        transition: 0.55s 0.5s;
+    }
+
+    .menu-middle-click {
+        opacity: 0;
+    }
+
+    .menu-bottom-click {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        top: 15px;
+        -webkit-transform: rotate(-410deg);
+        -ms-transform: rotate(-410deg);
+        transform: rotate(-410deg);
+        -webkit-transition: 0.55s 0.5s;
+        transition: 0.55s 0.5s;
     }
 }

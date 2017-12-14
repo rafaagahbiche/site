@@ -2,6 +2,13 @@
 @model ArticlesGlobe
 
 @{
+    <header>
+        <div class="menu-header">
+            <span class="menu-global menu-top"></span>
+            <span class="menu-global menu-middle"></span>
+            <span class="menu-global menu-bottom"></span>
+        </div>
+    </header>
     <nav class="menu-list">
         <ul class="menu">
             <li class="home-link">
@@ -31,5 +38,9 @@
                         </div>
                 </li>}
         </ul>
+        <footer>
+            <div>&copy; @DateTime.Now.Year - Rafaa Gahbiche</div>
+            <div><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:ar.gahbiche@gmail.com" target="_blank">ar.gahbiche@gmail.com</a></div>
+        </footer>
     </nav>
 }
