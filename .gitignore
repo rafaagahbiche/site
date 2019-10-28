@@ -242,3 +242,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+
+Properties/
+images/
+Service References/
