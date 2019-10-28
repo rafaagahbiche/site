@@ -154,6 +154,13 @@
     <Content Include="images\ebook64.png" />
     <Content Include="images\edit2.png" />
     <Content Include="images\edit64.png" />
+    <Content Include="images\Entities.png" />
+    <Content Include="images\gallery.png" />
+    <Content Include="images\gallery64.png" />
+    <Content Include="images\GalleryContext.png" />
+    <Content Include="images\PlaygroundGallery1.png" />
+    <Content Include="images\PlaygroundGallery2.png" />
+    <Content Include="images\RepositoriyImpl.png" />
     <Content Include="images\text-editor.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
